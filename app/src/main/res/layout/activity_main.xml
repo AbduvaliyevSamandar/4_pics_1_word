@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bacround_main"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="#38000000"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="8dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:background="@drawable/arrow"
+                app:tint="#FFFFFF"
+                android:onClick="onarrowclick"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Space android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"/>
+            <Space android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_coins"/>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:id="@+id/coins"
+                tools:text="400"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/volume_up_fill0_wght400_grad0_opsz48__1_"
+                android:layout_marginLeft="140dp"
+                android:layout_marginRight="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/volume"
+                android:onClick="onMainvolumeclick"
+                />
+            <TextView
+                android:id="@+id/_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:text="_1"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/img_1"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/answers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButtonStyle"/>
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButtonStyle"/>
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButtonStyle"/>
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButtonStyle"/>
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButtonStyle"/>
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButtonStyle"/>
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButtonStyle"/>
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/AnswerButtonStyle"/>
+        </LinearLayout>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/variants1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4dp">
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/variants2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center"
+                    android:padding="4dp">
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                    <androidx.appcompat.widget.AppCompatButton style="@style/VariantButtonStyle"/>
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_9"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="6dp"
+                android:onClick="onPlusclick"
+                tools:ignore="UsingOnClickInXml" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fream_lyout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#CCC1B7B7"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#FFEB3B"
+                android:text="* CURRECT *"
+                android:textStyle="bold"
+                android:textSize="38sp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/ic_coins"
+                    />
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+                    android:textSize="48sp"
+                    android:textColor="#FFEB3B"
+                    android:textStyle="bold"
+                    android:text="x15"
+                    />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:background="#FFEB3B"
+                android:layout_marginTop="40dp"
+                android:textColor="#E91E63"
+                android:textStyle="bold"
+                android:textSize="36sp"
+                android:onClick="onContinuable"
+                tools:ignore="UsingOnClickInXml" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</FrameLayout>
+
